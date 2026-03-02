@@ -71,7 +71,11 @@ const App = {
 
       // Timer controls
       if (e.target.id === 'btn-timer-toggle') {
-        if (this.currentTimer) this.currentTimer.toggle();
+        if (this.currentTimer) {
+          this.currentTimer.toggle();
+          const btn = document.getElementById('btn-timer-toggle');
+          if (btn) btn.textContent = this.currentTimer.isRunning ? 'Pause' : 'Resume';
+        }
         return;
       }
       if (e.target.id === 'btn-timer-skip') {
