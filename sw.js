@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hip-challenge-v1';
+const CACHE_NAME = 'hip-challenge-v3e3df3bc6b22';
 const ASSETS = [
   './',
   './index.html',
